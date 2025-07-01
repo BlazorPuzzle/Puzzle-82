@@ -1,0 +1,18 @@
+﻿@page "/counter"
+@inject StateBag stateBag
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @stateBag.Counter</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+
+    private void IncrementCount()
+    {
+        stateBag.Counter++;
+    }
+}

@@ -1,0 +1,13 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Blazor Puzzle #82</h1>
+
+<p>This is a .NET 9 Blazor Web App with global server interactivity</p>
+<p>We have moved the currentCount variable out of the Counter.razor page and into a StateBag 
+    service that we have injected. We now use the StateBag.Counter property.</p>
+<p>This is so we can keep track of the Count when we navigate away from and back to the Counter page.</p>
+<p>We have added StateBag as a service so it can be injected, and it works. Kind of.</p>
+<p>If we load another session, strange things happen.</p>
+<p>How can we fix this?</p>
